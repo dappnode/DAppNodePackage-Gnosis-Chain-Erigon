@@ -7,7 +7,7 @@
   "upstreamRepo": "ledgerwatch/erigon",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
-  "chain": "gnosis",
+  "chain": "ethereum",
   "categories": ["Developer tools"],
   "architectures": ["linux/amd64"],
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
