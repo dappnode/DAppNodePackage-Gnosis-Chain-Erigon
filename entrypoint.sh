@@ -64,6 +64,7 @@ fi
 ##########
 
 exec erigon --datadir=${DATADIR} \
+    --chain=gnosis
     --http.addr=0.0.0.0 \
     --http.vhosts=* \
     --http.corsdomain=* \
