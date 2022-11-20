@@ -1,18 +1,18 @@
 version: "3.5"
 services:
   erigon:
-    image: "erigon.erigon.dnp.dappnode.eth:0.1.8"
+    image: "erigon.erigon-gnosis.dnp.dappnode.eth:0.1.8"
     build:
       context: .
       args:
         UPSTREAM_VERSION: v2.30.0
     ports:
-      - "30405:30405/tcp"
-      - "30405:30405/udp"
+      - "31305:31305/tcp"
+      - "31305:31305/udp"
     volumes:
       - "data:/home/erigon/.local/share"
     environment:
-      P2P_PORT: 30405
+      P2P_PORT: 31305
       EXTRA_OPTs: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
     restart: unless-stopped
     ulimits:
