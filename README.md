@@ -2,4 +2,4 @@
 
 DAppNodePackage for the Erigon Gnosis Chain Execution Layer Client
 
-https://github.com/ledgerwatch/erigon
+[Docs](https://github.com/ledgerwatch/erigon)

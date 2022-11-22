@@ -1,4 +1,4 @@
-## Erigon Gnosis Chain (Execution Client)
+# Erigon Gnosis Chain (Execution Client)
 
 Welcome to the Merge Ready Erigon Gnosis Chain Execution Layer Client
 
