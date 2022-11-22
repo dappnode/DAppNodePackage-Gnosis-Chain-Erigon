@@ -24,14 +24,14 @@
   "mainService": "erigon",
   "license": "GPL-3.0",
   "requirements": {
-    "minimumDappnodeVersion": "0.2.60"
+    "minimumDappnodeVersion": "0.2.62"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dappnode/DAppNodePackage-Gnosis-Chain-Erigon.git"
   },
   "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-gnosis-chain-erigon/issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-Gnosis-Chain-Erigon/issues"
   },
   "exposable": [
     {
