@@ -2,7 +2,7 @@
 
 case "$_DAPPNODE_GLOBAL_CONSENSUS_CLIENT_GNOSIS" in
 "gnosis-beacon-chain-prysm.dnp.dappnode.eth")
-    echo "Using gnoaia-beacon-chain-prysm.dnp.dappnode.eth"
+    echo "Using gnosis-beacon-chain-prysm.dnp.dappnode.eth"
     JWT_PATH="/security/prysm/jwtsecret.hex"
     ;;
 "lighthouse-gnosis.dnp.dappnode.eth")
