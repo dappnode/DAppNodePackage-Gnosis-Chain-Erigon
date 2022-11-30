@@ -24,7 +24,7 @@
   "mainService": "erigon",
   "license": "GPL-3.0",
   "requirements": {
-    "minimumDappnodeVersion": "0.2.62"
+    "minimumDappnodeVersion": "0.2.61"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
   "exposable": [
     {
       "name": "Erigon Gnosis Chain JSON RPC",
-      "description": "JSON RPC endpoint for Erigon mainnet (HTTPS & WSS)",
+      "description": "JSON RPC endpoint for Erigon Gnosis Chain (HTTPS & WSS)",
       "serviceName": "erigon",
       "port": 8545
     }
