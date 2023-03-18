@@ -24,7 +24,7 @@
   "mainService": "erigon",
   "license": "GPL-3.0",
   "requirements": {
-    "minimumDappnodeVersion": "0.2.61"
+    "minimumDappnodeVersion": "0.2.68"
   },
   "repository": {
     "type": "git",
