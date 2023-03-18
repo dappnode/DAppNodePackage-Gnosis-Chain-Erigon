@@ -41,6 +41,7 @@ exec erigon --datadir=${DATADIR} \
     --http.addr=0.0.0.0 \
     --http.vhosts=* \
     --http.corsdomain=* \
+    --engine.port=8551 \
     --ws \
     --private.api.addr=0.0.0.0:9090 \
     --externalcl \
@@ -55,5 +56,3 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.addr 0.0.0.0 \
     --authrpc.vhosts=* \
     ${EXTRA_OPTs}
-
-#    --engine.port=8551 \
