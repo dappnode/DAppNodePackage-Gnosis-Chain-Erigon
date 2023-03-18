@@ -53,6 +53,6 @@ exec erigon --datadir=${DATADIR} \
     --pprof.port=6061 \
     --port=${P2P_PORT} \
     --authrpc.jwtsecret=${JWT_PATH} \
-    --authrpc.addr 0.0.0.0 \
+    --authrpc.addr=0.0.0.0 \
     --authrpc.vhosts=* \
     ${EXTRA_OPTs}
