@@ -1,8 +1,8 @@
 [
     {
         "labels": {
-            "package": "erigon.erigon-gnosis.dnp.dappnode.eth",
-            "service": "erigon.erigon-gnosis.dappnode",
+            "package": "erigon-gnosis.dnp.dappnode.eth",
+            "service": "erigon",
             "__metrics_path__": "/debug/metrics/prometheus"
         },
         "targets": [
