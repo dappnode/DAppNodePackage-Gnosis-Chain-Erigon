@@ -10,7 +10,7 @@ services:
       - "31305:31305/tcp"
       - "31305:31305/udp"
     volumes:
-      - "erigon-gnosis:/home/erigon-gnosis/.local/share"
+      - "data:/home/erigon-gnosis/.local/share"
     environment:
       P2P_PORT: 31305
       EXTRA_OPTs: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
@@ -24,4 +24,4 @@ services:
         limits:
           memory: 32768M
 volumes:
-  erigon-gnosis: {}
+  data: {}

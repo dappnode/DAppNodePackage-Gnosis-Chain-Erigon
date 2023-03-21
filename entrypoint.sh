@@ -37,7 +37,7 @@ curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
 ##########
 
 exec erigon --datadir=${DATADIR} \
-    --chain=gnosis
+    --chain=gnosis \
     --http.addr=0.0.0.0 \
     --http.vhosts=* \
     --http.corsdomain=* \
