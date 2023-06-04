@@ -46,7 +46,7 @@ exec erigon --datadir=${DATADIR} \
     --http.corsdomain=* \
     --ws \
     --private.api.addr=0.0.0.0:9090 \
-    --externalcl \
+    --internalcl \
     --metrics \
     --metrics.addr=0.0.0.0 \
     --metrics.port=6060 \
