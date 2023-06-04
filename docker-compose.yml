@@ -13,7 +13,7 @@ services:
       - "data:/home/erigon-gnosis/.local/share"
     environment:
       P2P_PORT: 31305
-      EXTRA_OPTs: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
+      EXTRA_OPTs: "--http.api=eth,erigon,web3,net,debug,trace"
     restart: unless-stopped
     ulimits:
       nofile:
