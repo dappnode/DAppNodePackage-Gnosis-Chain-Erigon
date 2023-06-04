@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v2.43.0
+        UPSTREAM_VERSION: v2.44.0
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
