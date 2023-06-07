@@ -31,6 +31,7 @@ esac
 JWT=$(cat $JWT_PATH)
 curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
 
+DATADIR="/home/erigon-gnosis/.local/share"
 
 ##########
 # Erigon #
@@ -40,6 +41,7 @@ exec erigon --datadir=${DATADIR} \
     --chain=gnosis \
     --http
     --http.addr=0.0.0.0 \
+    --http.port=8545 \
     --http.vhosts=* \
     --http.corsdomain=* \
     --ws \
@@ -55,4 +57,5 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.jwtsecret=${JWT_PATH} \
     --authrpc.addr=0.0.0.0 \
     --authrpc.vhosts=* \
-    ${EXTRA_OPTs}
+    --torrent.port=42169 \
+    ${EXTRA_OPTS}
