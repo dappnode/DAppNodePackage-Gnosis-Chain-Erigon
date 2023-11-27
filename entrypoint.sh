@@ -57,6 +57,6 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.addr=0.0.0.0 \
     --authrpc.vhosts=* \
     --torrent.port=42169 \
-    --torrent.upload.rate=8mb \
+    --torrent.upload.rate=16mb \
     --torrent.download.rate=32mb \
     ${EXTRA_OPTS}
