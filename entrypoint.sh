@@ -45,6 +45,10 @@ exec erigon --datadir=${DATADIR} \
     --http.corsdomain=* \
     --ws \
     --private.api.addr=0.0.0.0:9090 \
+    --internalcl \
+    --lightclient.discovery.addr=0.0.0.0 \
+    --lightclient.discovery.port=${CAPLIN_P2P_PORT} \
+    --lightclient.discovery.tcpport=${CAPLIN_P2P_TCP_PORT} \
     --metrics \
     --metrics.addr=0.0.0.0 \
     --metrics.port=6060 \
@@ -55,5 +59,7 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.jwtsecret=${JWT_PATH} \
     --authrpc.addr=0.0.0.0 \
     --authrpc.vhosts=* \
-    --torrent.port=42169 \
+    --torrent.port=43084 \
+    --torrent.upload.rate=16mb \
+    --torrent.download.rate=32mb \
     ${EXTRA_OPTS}

@@ -9,12 +9,16 @@ services:
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
-      - "42169:42169/tcp"
-      - "42169:42169/udp"
+      - "43084:43084/tcp"
+      - "43084:43084/udp"
+      - "5015:5015/udp"
+      - "5016:5016/tcp"
     volumes:
       - "data:/home/erigon-gnosis/.local/share"
     environment:
       P2P_PORT: 31305
+      CAPLIN_P2P_PORT: 5015
+      CAPLIN_P2P_TCP_PORT: 5016
       EXTRA_OPTS: "--http.api=eth,erigon,web3,net,debug,trace"
     restart: unless-stopped
     ulimits:
