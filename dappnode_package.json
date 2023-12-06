@@ -21,7 +21,7 @@
     "apiEngine": "http://erigon-gnosis.dappnode:8551",
     "homepage": "https://github.com/ledgerwatch/erigon"
   },
-  "mainService": "erigon",
+  "mainService": "erigon-gnosis",
   "license": "GPL-3.0",
   "requirements": {
     "minimumDappnodeVersion": "0.2.68"
@@ -37,14 +37,14 @@
     {
       "name": "Erigon Gnosis Chain JSON RPC",
       "description": "JSON RPC endpoint for Erigon Gnosis Chain (HTTPS & WSS)",
-      "serviceName": "erigon",
+      "serviceName": "erigon-gnosis",
       "port": 8545
     }
   ],
   "globalEnvs": [
     {
       "envs": ["CONSENSUS_CLIENT_GNOSIS"],
-      "services": ["erigon"]
+      "services": ["erigon-gnosis"]
     }
   ]
 }
