@@ -55,5 +55,5 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.jwtsecret=${JWT_PATH} \
     --authrpc.addr=0.0.0.0 \
     --authrpc.vhosts=* \
-    --torrent.port=42169 \
+    --torrent.port=43084 \
     ${EXTRA_OPTS}
