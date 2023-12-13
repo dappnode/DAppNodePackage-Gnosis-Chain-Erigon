@@ -9,8 +9,8 @@ services:
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
-      - "42169:42169/tcp"
-      - "42169:42169/udp"
+      - "43084:43084/tcp"
+      - "43084:43084/udp"
     volumes:
       - "data:/home/erigon-gnosis/.local/share"
     environment:
