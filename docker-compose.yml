@@ -7,15 +7,13 @@ services:
       args:
         UPSTREAM_VERSION: v2.55.1
     ports:
-      - "31305:31305/tcp"
-      - "31305:31305/udp"
-      - "43084:43084/tcp"
-      - "43084:43084/udp"
+      - "30405:30405/tcp"
+      - "30405:30405/udp"
     volumes:
-      - "data:/home/erigon-gnosis/.local/share"
+      - "data:/home/erigon/.local/share"
     environment:
-      P2P_PORT: 31305
-      EXTRA_OPTS: "--http.api=eth,erigon,web3,net,debug,trace"
+      P2P_PORT: 30405
+      EXTRA_OPTs: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
     restart: unless-stopped
     ulimits:
       nofile:
