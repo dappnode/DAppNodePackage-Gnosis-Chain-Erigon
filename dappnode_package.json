@@ -35,8 +35,14 @@
   },
   "exposable": [
     {
-      "name": "Erigon Gnosis Chain JSON RPC",
-      "description": "JSON RPC endpoint for Erigon Gnosis Chain (HTTPS & WSS)",
+      "name": "Erigon JSON RPC",
+      "description": "JSON RPC endpoint for Erigon mainnet",
+      "serviceName": "erigon",
+      "port": 8545
+    },
+    {
+      "name": "Erigon JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Erigon mainnet",
       "serviceName": "erigon",
       "port": 8545
     }
