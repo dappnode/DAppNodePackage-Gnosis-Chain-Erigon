@@ -45,6 +45,12 @@
       "description": "JSON RPC WebSocket endpoint for Erigon mainnet",
       "serviceName": "erigon",
       "port": 8545
+    },
+    {
+      "name": "Torrent sync port",
+      "description": "Erigon torrent port for sync",
+      "serviceName": "erigon",
+      "port": 43084
     }
   ],
   "globalEnvs": [
