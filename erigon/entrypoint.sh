@@ -33,6 +33,7 @@ curl -X POST "http://my.dappnode/data-send?key=jwt&data=${JWT}"
 
 PORT="${P2P_PORT:=30303}"
 TORRENT_PORT="${TORRENT_PORT:=43084}"
+PPROF_PORT="${PPROF_PORT:=6061}"
 
 DATADIR="/home/erigon-gnosis/.local/share"
 
@@ -55,4 +56,7 @@ exec erigon --datadir=${DATADIR} \
     --authrpc.addr=0.0.0.0 \
     --authrpc.vhosts=* \
     --torrent.port=${TORRENT_PORT} \
+    --pprof \
+    --pprof.addr=0.0.0.0 \
+    --pprof.port=${PPROF_PORT} \
     ${EXTRA_OPTs}
