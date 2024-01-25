@@ -59,4 +59,4 @@ exec erigon --datadir=${DATADIR} \
     --pprof \
     --pprof.addr=0.0.0.0 \
     --pprof.port=${PPROF_PORT} \
-    ${EXTRA_OPTs}
+    ${EXTRA_OPTS}
