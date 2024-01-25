@@ -15,7 +15,7 @@ services:
       P2P_PORT: 31305
       TORRENT_PORT: 43084
       PPROF_PORT: 6061
-      EXTRA_OPTs: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
+      EXTRA_OPTS: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
     restart: unless-stopped
     ulimits:
       nofile:
