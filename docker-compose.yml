@@ -9,13 +9,13 @@ services:
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
-      - "43084:43084/tcp"
-      - "43084:43084/udp"
     volumes:
       - "data:/home/erigon-gnosis/.local/share"
     environment:
       P2P_PORT: 31305
-      EXTRA_OPTS: "--http.api=eth,erigon,web3,net,debug,trace"
+      TORRENT_PORT: 43084
+      PPROF_PORT: 6061
+      EXTRA_OPTS: "--http.api=engine,eth,erigon,web3,net,debug,trace,txpool"
     restart: unless-stopped
     ulimits:
       nofile:
