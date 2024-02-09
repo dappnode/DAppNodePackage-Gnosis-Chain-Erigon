@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - run: npx @dappnode/dappnodesdk build --provider remote --skip_save
-      
+
   #e2e-test:
    # runs-on: gnosis
    # needs: build-test
@@ -26,7 +26,7 @@ jobs:
    # name: End to end tests
    # steps:
     #  - uses: actions/checkout@v3
-    #  - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://erigon-gnosis.dappnode:8545 --network gnosis
+    #  - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://gnosis-erigon.dappnode:8545 --network gnosis
 
   release:
     name: Release

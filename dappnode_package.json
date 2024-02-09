@@ -1,5 +1,5 @@
 {
-  "name": "erigon-gnosis.dnp.dappnode.eth",
+  "name": "gnosis-erigon.dnp.dappnode.eth",
   "version": "0.1.0",
   "shortDescription": "Modular Ethereum client on the efficiency frontier, written in Go, for the Gnosis Chain network",
   "description": "Erigon is a next generation Ethereum client that introduces several new concepts:\n\n* A modular client design, enabling parallelized development of the client\n\n* New (`flat`) model of storing Ethereum state, allowing a lower disk footprint\n\n* Preprocessing of data outside of the storage engine, making database write operations faster by a magnitude\n\n* Staged synchronization technique, allowing very fast synchronization",
@@ -17,8 +17,8 @@
     "Voss <voss@visnovalabs.io> (https://github.com/alexpeterson91)"
   ],
   "links": {
-    "api": "http://erigon-gnosis.dappnode:8545",
-    "apiEngine": "http://erigon-gnosis.dappnode:8551",
+    "api": "http://gnosis-erigon.dappnode:8545",
+    "apiEngine": "http://gnosis-erigon.dappnode:8551",
     "homepage": "https://github.com/ledgerwatch/erigon"
   },
   "mainService": "erigon",

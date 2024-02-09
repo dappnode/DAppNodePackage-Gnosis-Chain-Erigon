@@ -35,7 +35,7 @@ PORT="${P2P_PORT:=30303}"
 TORRENT_PORT="${TORRENT_PORT:=43084}"
 PPROF_PORT="${PPROF_PORT:=6061}"
 
-DATADIR="/home/erigon-gnosis/.local/share"
+DATADIR="/home/gnosis-erigon/.local/share"
 
 ##########
 # Erigon #
