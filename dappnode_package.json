@@ -23,9 +23,6 @@
   },
   "mainService": "erigon",
   "license": "GPL-3.0",
-  "requirements": {
-    "minimumDappnodeVersion": "0.2.68"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dappnode/DAppNodePackage-Gnosis-Chain-Erigon.git"
@@ -52,5 +49,11 @@
       "envs": ["CONSENSUS_CLIENT_GNOSIS"],
       "services": ["erigon"]
     }
-  ]
+  ],
+  "optionalDependencies": {
+    "web3signer-gnosis.dnp.dappnode.eth": "1.0.9",
+  },
+  "requirements": {
+    "minimumDappnodeVersion": "0.2.89"
+  }
 }
