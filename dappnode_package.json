@@ -52,5 +52,14 @@
       "envs": ["CONSENSUS_CLIENT_GNOSIS"],
       "services": ["erigon"]
     }
-  ]
+  ],
+  "optionalDependencies": {
+    "web3signer-gnosis.dnp.dappnode.eth": "latest",
+    "lighthouse-gnosis.dnp.dappnode.eth": "latest",
+    "teku-gnosis.dnp.dappnode.eth": "latest", 
+    "lodestar-gnosis.dnp.dappnode.eth": "latest",
+  },
+  "requirements": {
+    "minimumDappnodeVersion": 0.2.89
+  }
 }
