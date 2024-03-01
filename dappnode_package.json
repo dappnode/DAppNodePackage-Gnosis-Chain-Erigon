@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "shortDescription": "Modular Ethereum client on the efficiency frontier, written in Go, for the Gnosis Chain network",
   "description": "Erigon is a next generation Ethereum client that introduces several new concepts:\n\n* A modular client design, enabling parallelized development of the client\n\n* New (`flat`) model of storing Ethereum state, allowing a lower disk footprint\n\n* Preprocessing of data outside of the storage engine, making database write operations faster by a magnitude\n\n* Staged synchronization technique, allowing very fast synchronization",
-  "upstreamVersion": "v2.58.0",
+  "upstreamVersion": "v2.58.1",
   "upstreamRepo": "ledgerwatch/erigon",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
@@ -18,7 +18,6 @@
   ],
   "links": {
     "api": "http://erigon-gnosis.dappnode:8545",
-    "apiEngine": "http://erigon-gnosis.dappnode:8551",
     "homepage": "https://github.com/ledgerwatch/erigon"
   },
   "mainService": "erigon",
@@ -39,12 +38,6 @@
       "description": "JSON RPC endpoint for Erigon Gnosis Chain (HTTPS & WSS)",
       "serviceName": "erigon",
       "port": 8545
-    }
-  ],
-  "globalEnvs": [
-    {
-      "envs": ["CONSENSUS_CLIENT_GNOSIS"],
-      "services": ["erigon"]
     }
   ]
 }

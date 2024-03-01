@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v2.58.0
+        UPSTREAM_VERSION: v2.58.1
     ports:
       - "31305:31305/tcp"
       - "31305:31305/udp"
@@ -19,7 +19,8 @@ services:
       P2P_PORT: 31305
       CAPLIN_P2P_PORT: 5015
       CAPLIN_P2P_TCP_PORT: 5016
-      EXTRA_OPTS: "--http.api=eth,erigon,web3,net,debug"
+      EXTRA_OPTS: "--http.api=eth,erigon,web3,net,debug,txpool,trace"
+      CL_BACKFILLING: "false"
     restart: unless-stopped
     ulimits:
       nofile:
