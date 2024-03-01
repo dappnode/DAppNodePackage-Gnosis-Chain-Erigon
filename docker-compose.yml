@@ -20,7 +20,7 @@ services:
       CAPLIN_P2P_PORT: 5015
       CAPLIN_P2P_TCP_PORT: 5016
       EXTRA_OPTS: "--http.api=eth,erigon,web3,net,debug,txpool,trace"
-      CL_BACKFILLING: false
+      CL_BACKFILLING: "false"
     restart: unless-stopped
     ulimits:
       nofile:
