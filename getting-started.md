@@ -5,6 +5,4 @@ Welcome to the Merge Ready Erigon Gnosis Chain Execution Layer Client
 There are now two RPC APIs in Execution Clients:
 
 1. Querying API `http://erigon-gnosis.dappnode:8545`. Use this endpoint to query transactions on your node and connect to it with your web3 wallet.
-2. Engine API `http://erigon-gnosis.dappnode:8551`. Use this endpoint to connect your Beacon Chain (Consensus Layer) client.
-
-After the merge, if your Execution Client is not connected to a Consensus Layer client, you won't be able to keep it synced, nor use it to query the blockchain, nor will you be able to connect your wallet to it!
+2. The Beacon API is available in this package when it's stable upstreeam at `http://erigon-gnosis.dappnode:3500` -- There is no exposed Engine JSONRPC API because the Caplin light consensus beacon chain is embedded into this package.
