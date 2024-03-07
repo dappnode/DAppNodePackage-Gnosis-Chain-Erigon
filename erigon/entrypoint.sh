@@ -59,4 +59,5 @@ exec erigon --datadir=${DATADIR} \
     --pprof \
     --pprof.addr=0.0.0.0 \
     --pprof.port=${PPROF_PORT} \
+    --db.size.limit=8TB \
     ${EXTRA_OPTS}
