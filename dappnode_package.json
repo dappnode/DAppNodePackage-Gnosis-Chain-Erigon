@@ -51,7 +51,7 @@
     }
   ],
   "optionalDependencies": {
-    "web3signer-gnosis.dnp.dappnode.eth": "1.0.9"
+    "web3signer-gnosis.dnp.dappnode.eth": "latest"
   },
   "requirements": {
     "minimumDappnodeVersion": "0.2.89"
