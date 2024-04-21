@@ -4,5 +4,29 @@
     "uploadedTo": {
       "dappnode": "Tue, 29 Nov 2022 23:18:57 GMT"
     }
+  },
+  "0.1.1": {
+    "hash": "/ipfs/QmUjbriaU6KNijdf5tsaGwrHkGtzw6NqrR3X36vkC7JdBK",
+    "uploadedTo": {
+      "dappnode": "Sun, 17 Mar 2024 02:00:05 GMT"
+    }
+  },
+  "0.1.2": {
+    "hash": "/ipfs/QmS6JBTHM3Wqa2kVsSHC2JBvF9Mm8JBBHjHxoNQ3pdzFiW",
+    "uploadedTo": {
+      "dappnode": "Tue, 19 Mar 2024 05:37:34 GMT"
+    }
+  },
+  "0.1.3": {
+    "hash": "/ipfs/QmQ2tAuQnbEaGTnJxEDK8AWNFsVQRtfP6pBKBx6cQWYg4K",
+    "uploadedTo": {
+      "dappnode": "Thu, 28 Mar 2024 23:45:31 GMT"
+    }
+  },
+  "0.1.4": {
+    "hash": "/ipfs/QmUpKNMMaYoMNUCWRTCA6DHkWPmUsAkxbJ9ki6AWFAynmQ",
+    "uploadedTo": {
+      "dappnode": "Sun, 21 Apr 2024 04:07:30 GMT"
+    }
   }
 }
