@@ -1,16 +1,16 @@
 version: "3.5"
 services:
   erigon:
-    image: "erigon.gnosis-erigon.dnp.dappnode.eth:0.1.0"
+    image: erigon.gnosis-erigon.dnp.dappnode.eth:0.1.0
     build:
       context: .
       args:
-        UPSTREAM_VERSION: v2.59.0
+        UPSTREAM_VERSION: v2.60.0
     ports:
-      - "31305:31305/tcp"
-      - "31305:31305/udp"
+      - 31305:31305/tcp
+      - 31305:31305/udp
     volumes:
-      - "data:/home/gnosis-erigon/.local/share"
+      - data:/home/gnosis-erigon/.local/share
     environment:
       P2P_PORT: 31305
       TORRENT_PORT: 43084
