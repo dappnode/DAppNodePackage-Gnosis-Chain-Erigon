@@ -53,9 +53,6 @@
       "services": ["erigon"]
     }
   ],
-  "optionalDependencies": {
-    "web3signer-gnosis.dnp.dappnode.eth": "latest"
-  },
   "requirements": {
     "minimumDappnodeVersion": "0.2.89"
   }
