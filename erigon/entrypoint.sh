@@ -43,6 +43,7 @@ DATADIR="/home/gnosis-erigon/.local/share"
 
 exec erigon --datadir=${DATADIR} \
     --chain=gnosis \
+    --externalcl \
     --http.addr=0.0.0.0 \
     --http.vhosts=* \
     --http.corsdomain=* \
