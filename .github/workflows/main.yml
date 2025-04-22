@@ -16,26 +16,17 @@ jobs:
     if: github.event_name != 'push'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - run: npx @dappnode/dappnodesdk build --provider remote --skip_save
-
-  #e2e-test:
-   # runs-on: gnosis
-   # needs: build-test
-   # if: github.event_name != 'push'
-   # name: End to end tests
-   # steps:
-    #  - uses: actions/checkout@v3
-    #  - run: npx @dappnode/dappnodesdk@latest github-action test-end-to-end --errorLogsTimeout 120 --healthCheckUrl http://gnosis-erigon.dappnode:8545 --network gnosis
 
   release:
     name: Release
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Publish
-        run: npx @dappnode/dappnodesdk publish patch --dappnode_team_preset --timeout 1h
+        run: npx @dappnode/dappnodesdk publish major --dappnode_team_preset --timeout 1h
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEVELOPER_ADDRESS: "0xf35960302a07022aba880dffaec2fdd64d5bf1c1"
