@@ -44,6 +44,9 @@
       "port": 8545
     }
   ],
+  "warnings": {
+    "onMajorUpdate": "⚠️ AFTER THE UPDATE YOU MUST DELETE THE VOLUMES OF YOUR ERIGON GNOSIS PACKAGE ⚠️. Erigon v3 requires resync and that is why deletion of old volumes is mandatory. Erigon now runs non-archival by default. Learn more about deleting volumes here https://docs.dappnode.io/docs/user/packages/understanding-dappnode-packages/info",
+  },
   "globalEnvs": [
     {
       "envs": ["CONSENSUS_CLIENT_GNOSIS"],
