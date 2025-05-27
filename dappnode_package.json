@@ -1,9 +1,9 @@
 {
   "name": "gnosis-erigon.dnp.dappnode.eth",
-  "version": "0.1.2",
+  "version": "1.0.1",
   "shortDescription": "Modular Ethereum client on the efficiency frontier, written in Go, for the Gnosis Chain network",
   "description": "Erigon is a next generation Ethereum client that introduces several new concepts:\n\n* A modular client design, enabling parallelized development of the client\n\n* New (`flat`) model of storing Ethereum state, allowing a lower disk footprint\n\n* Preprocessing of data outside of the storage engine, making database write operations faster by a magnitude\n\n* Staged synchronization technique, allowing very fast synchronization",
-  "upstreamVersion": "v3.0.2",
+  "upstreamVersion": "v3.0.4",
   "upstreamRepo": "erigontech/erigon",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
@@ -45,7 +45,7 @@
     }
   ],
   "warnings": {
-    "onMajorUpdate": "⚠️ AFTER THE UPDATE YOU MUST DELETE THE VOLUMES OF YOUR ERIGON GNOSIS PACKAGE ⚠️. Erigon v3 requires resync and that is why deletion of old volumes is mandatory. Erigon now runs non-archival by default. Learn more about deleting volumes here https://docs.dappnode.io/docs/user/packages/understanding-dappnode-packages/info",
+    "onMajorUpdate": "⚠️ AFTER THE UPDATE YOU MUST DELETE THE VOLUMES OF YOUR ERIGON GNOSIS PACKAGE ⚠️. Erigon v3 requires resync and that is why deletion of old volumes is mandatory. Erigon now runs non-archival by default. Learn more about deleting volumes here https://docs.dappnode.io/docs/user/packages/understanding-dappnode-packages/info"
   },
   "globalEnvs": [
     {
